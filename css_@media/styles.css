@@ -1,0 +1,72 @@
+.container
+{
+    font-size: 1.5rem;
+    min-height: 400px;
+    background-color: rgb(74, 13, 13);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 1fr auto ;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "header"
+    "advert"
+    "content"
+    "footer";
+    
+}
+.item1
+{
+    background-color: lightcoral;
+    grid-area: header;
+}
+.item2
+{
+    background-color: lightgreen;
+    grid-area: advert;
+}
+.item3
+{
+    background-color: lightgoldenrodyellow;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.item4
+{
+    background-color: lightskyblue;
+    grid-area: footer;
+}
+@media (min-width:300px)
+{
+    .container{
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "advert header"
+        "advert content"
+        "advert footer";
+    }
+}
+@media (min-width:500px)
+{
+    .container{
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "header header"
+        "advert content"
+        "footer footer";
+    }
+}
+.para1
+{
+    background-color: darkblue;
+
+}
+.para2
+{
+    background-color: darkmagenta;
+
+}
+

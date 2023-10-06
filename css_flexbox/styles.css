@@ -1,0 +1,25 @@
+.container
+{
+    height:500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+.box1
+{
+    background-color: aqua;
+    width: 100px;
+    height: 50%;
+    /* flex-shrink: 1; */
+    flex-grow: 1;
+}
+.box2
+{
+    background-color: brown;
+    width:100px;
+    height: 50%;
+    /* flex-shrink: 2; */
+    flex-grow: 2;
+}
